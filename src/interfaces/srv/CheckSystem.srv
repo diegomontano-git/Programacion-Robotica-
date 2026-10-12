@@ -1,0 +1,4 @@
+int64 temperatura
+bool motores_listos
+---
+bool estado

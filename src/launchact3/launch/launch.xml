@@ -1,0 +1,12 @@
+<launch>
+  <!--  Nodo Emulador -->
+  <node pkg="act3" exec="emulador" name="emulador_node" output="screen"/>
+
+  <!-- Nodo Monitor con parámetro umbral_temperatura cambiado a 75 -->
+  <node pkg="act3" exec="monitor" name="monitor_node" output="screen">
+    <param name="umbral_temperatura" value="75"/>
+  </node>
+
+  <!-- Nodo Operador -->
+  <node pkg="act3" exec="operador" name="operador_node" output="screen"/>
+</launch>
